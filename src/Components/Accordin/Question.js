@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import Data from "./Data";
+import "./index.css";
 const Accordion = () => {
   console.log(Data);
   const [questions, setQuestions] = useState(Data);
