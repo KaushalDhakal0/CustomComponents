@@ -22,11 +22,17 @@ const Category = () => {
 
 const Menu = ({ items }) => {
   // console.log(items);
+
   return (
     <div className="menu">
       {items.map((item) => {
         const { id, title, category, price, img } = item;
-        return <img src={img} />;
+        return (
+          <>
+            <h1>{title}</h1>
+            <img src={require(`./images/item-${id}.jpeg`)} width={"40%"} />
+          </>
+        );
       })}
     </div>
   );
