@@ -24,14 +24,24 @@ const Menu = ({ items }) => {
   // console.log(items);
 
   return (
-    <div className="menu">
-      {items.map((item) => {
-        const { id, title, category, price, img } = item;
+    <div className="section-center">
+      {items.map((menuItem) => {
+        const { id, title, img, desc, price } = menuItem;
         return (
-          <>
-            <h1>{title}</h1>
-            <img src={require(`./images/item-${id}.jpeg`)} width={"40%"} />
-          </>
+          <article key={id} className="menu-item">
+            <img
+              src={require(`./images/item-${id}.jpeg`)}
+              alt={title}
+              className="photo"
+            />
+            <div className="item-info">
+              <header>
+                <h4>{title}</h4>
+                <h4 className="price">${price}</h4>
+              </header>
+              <p className="item-text">{desc}</p>
+            </div>
+          </article>
         );
       })}
     </div>
