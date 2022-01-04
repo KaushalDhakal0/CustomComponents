@@ -5,8 +5,8 @@ import "./index.css";
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 const Main = () => {
-  const [menuItems, setMenuItems] = useState(items);
-  const [category, setCategory] = useState(allCategories);
+  //const [menuItems, setMenuItems] = useState(items);
+  //const [category, setCategory] = useState(allCategories);
   // console.log(allCategories);
   return (
     <main>
