@@ -16,8 +16,11 @@ const Main = () => {
     index === 0 ? setIndex(people.length - 1) : setIndex(index - 1);
   };
   useEffect(() => {
-    console.log(people);
-  });
+    setTimeout(() => {
+      setIndex(Math.floor(Math.random() * people.length));
+      console.log("inside");
+    }, 3000);
+  }, [index, people]);
   return (
     <section className="section">
       <div className="title">
