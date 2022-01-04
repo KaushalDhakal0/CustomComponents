@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Groceries from "./Main";
+import Main from "./Main";
 
 import "./index.css";
 
 const GroceryBud = () => {
-  return (
-    <section>
-      <Groceries />
-    </section>
-  );
+  return <Main />;
 };
 
 export default GroceryBud;
