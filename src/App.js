@@ -3,7 +3,8 @@ import React from "react";
 // import Main from "./Components/Menu/Main";
 // import Port from "./Components/Tabs/index.";
 //import Review from "./Components/SliderReview";
-import GroceryBud from "./Components/Grocery";
+// import GroceryBud from "./Components/Grocery";
+import Navbar from "./Components/Navbar";
 function App() {
   return (
     <>
@@ -11,7 +12,8 @@ function App() {
       <Main />
       <Port /> */}
       {/* <Review /> */}
-      <GroceryBud />
+      {/* <GroceryBud /> */}
+      <Navbar />
     </>
   );
 }
