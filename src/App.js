@@ -4,7 +4,8 @@ import React from "react";
 // import Port from "./Components/Tabs/index.";
 //import Review from "./Components/SliderReview";
 // import GroceryBud from "./Components/Grocery";
-import Navbar from "./Components/Navbar";
+// import Navbar from "./Components/Navbar";
+import SidebarModal from "./Components/SidebarModal";
 function App() {
   return (
     <>
@@ -13,7 +14,8 @@ function App() {
       <Port /> */}
       {/* <Review /> */}
       {/* <GroceryBud /> */}
-      <Navbar />
+      {/* <Navbar /> */}
+      <SidebarModal />
     </>
   );
 }
