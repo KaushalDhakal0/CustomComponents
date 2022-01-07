@@ -274,6 +274,7 @@ Variables
     color: var(--clr-grey-3);
     transition: var(--transition);
     letter-spacing: var(--spacing);
+    text-decoration: none;
   }
   
   .links a:hover {

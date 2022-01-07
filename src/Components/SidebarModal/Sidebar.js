@@ -1,7 +1,42 @@
 import React from "react";
+import logo from "./logo.svg";
+import { FaTimes } from "react-icons/fa";
+import { social, links } from "./data";
 
 const SideBar = () => {
-  return <h2>I'm a Sidebar</h2>;
+  return (
+    <aside className={`sidebar show-sidebar`}>
+      <div className="sidebar-header ">
+        <img src={logo} alt="Dummy" className="logo" />
+        <button className="close-btn">
+          <FaTimes />
+        </button>
+      </div>
+      <ul className="links">
+        {links.map((link) => {
+          const { id, icon, text, url } = link;
+          return (
+            <li key={id}>
+              <a href={url}>
+                {icon}
+                {text}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+      <ul className="social-icons">
+        {social.map((data) => {
+          const { id, url, icon } = data;
+          return (
+            <li key={id}>
+              <a href={url}>{icon}</a>
+            </li>
+          );
+        })}
+      </ul>
+    </aside>
+  );
 };
 
 export default SideBar;

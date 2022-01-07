@@ -1,7 +1,18 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Modal from "./Modal";
+import { FaBars } from "react-icons/fa";
+import { AppContext } from "../../context";
 const Main = () => {
-  return <div>From MAin....</div>;
+  const data = useContext(AppContext);
+  console.log(data);
+  return (
+    <main>
+      <button className="sidebar-toggle">
+        <FaBars />
+      </button>
+      <button className="btn">show modal</button>
+    </main>
+  );
 };
 
 export default Main;
